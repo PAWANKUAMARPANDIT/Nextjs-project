@@ -61,9 +61,7 @@ const HelpCenter = () => {
       title: "Getting Started",
       description: "Learn the basics and get up running quickly.",
       extraContent: [
-        "This is the first paragraph of extra content.",
-        "This is the second paragraph, providing more details.",
-        "This is the third paragraph with even more information."
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       ],
       icon: <FiHelpCircle className="text-blue-500 h-6 w-6" />
     },
@@ -77,7 +75,7 @@ const HelpCenter = () => {
   );
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 mt-8">
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">How can we help?</h1>
         <p className="text-xl text-gray-600 dark:text-gray-400">

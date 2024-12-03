@@ -61,8 +61,8 @@ const BlogPage = () => {
           <div key={blog.slug} className="block rounded-lg overflow-hidden shadow-lg group">
             <img src={blog.image} alt={blog.title} className="w-full h-48 object-cover" />
             <div className="p-5">
-              <h2 className="text-xl font-semibold mb-2 text-gray-800">{blog.title}</h2>
-              <p className="text-gray-600 mb-4">
+              <h2 className="text-xl font-semibold mb-2 text-gray-800 dark:text-gray-100">{blog.title}</h2>
+              <p className="text-gray-600 mb-4 dark:text-gray-100">
                 {expandedBlog === blog.slug
                   ? truncateText(blog.description, 100)
                   : truncateText(blog.description, 10)}

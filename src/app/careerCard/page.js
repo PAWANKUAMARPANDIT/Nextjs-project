@@ -28,10 +28,10 @@ const Careers = () => {
     ];
 
     return (
-      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8 mt-8">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">Join Our Team</h1>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-100 max-w-2xl mx-auto">
             Help us build the future of technology. We're looking for passionate individuals 
             who want to make a difference.
           </p>

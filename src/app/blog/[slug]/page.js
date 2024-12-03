@@ -60,7 +60,7 @@ const IndividualBlogPage = async ({ params }) => {
   return (
     <div className="container mx-auto py-16 px-4 max-w-4xl mt-8">
       <h1 className="text-5xl font-bold mb-6">{blog.title}</h1>
-      <div className="flex items-center gap-4 text-gray-600 mb-8">
+      <div className="flex items-center gap-4 text-gray-600 mb-8 dark:text-slate-100">
         <span>{format(new Date(blog.date), "MMMM dd, yyyy")}</span>
         <span>•</span>
         <span>5 min read</span>
@@ -70,7 +70,7 @@ const IndividualBlogPage = async ({ params }) => {
         alt={blog.title}
         className="w-full h-96 object-cover"
       />
-      <p className="text-xl text-gray-700 mb-8">{blog.description}</p>
+      <p className="text-xl text-gray-700 mb-8 dark:text-slate-100">{blog.description}</p>
       <div className="prose mb-8">{blog.fullContent}</div>
 
       {/* Place ShareButton here */}

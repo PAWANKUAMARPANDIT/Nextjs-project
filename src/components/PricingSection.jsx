@@ -61,7 +61,7 @@ const PricingSection = () => {
           <span className="font-medium text-gray-500 tracking-widest">Our Price</span>
           <h2 className="md:text-5xl text-3xl font-medium tracking-tight mt-7 text-gray-800">Price Plans</h2>
           <div className="w-10 mx-auto mt-5 bg-gradient-to-r from-cyan-500 to-blue-500 h-[2px]"></div>
-          <p className="mt-6 text-xl text-gray-600 dark:text-gray-400">
+          <p className="mt-6 text-xl text-gray-600 dark:text-gray-700">
             Choose the plan that suits your needs best and enjoy the creative process of brainstorming the new project of yours.
           </p>
         </div>
@@ -94,8 +94,8 @@ const PricingSection = () => {
                       <h5
                         className={`font-medium ${
                           plan.available[idx]
-                            ? "text-gray-700 dark:text-gray-300"
-                            : "text-gray-400 line-through dark:text-gray-300"
+                            ? "text-gray-700 dark:text-gray-700"
+                            : "text-gray-400 line-through dark:text-gray-700"
                         }`}
                       >
                         {feature}

@@ -13,7 +13,7 @@ const About = () => {
         </div>
         <div className="space-y-6 text-center">
           <h1 className="text-4xl font-bold dark:text-slate-100 text-gray-800 mb-4">About Us</h1>
-          <p className="dark:text-slate-400 text-gray-600 leading-relaxed">
+          <p className="dark:text-slate-100 text-gray-600 leading-relaxed">
             With a passion for creating innovative web solutions, I specialize in
             building responsive and user-friendly applications that make a difference.
           </p>
@@ -23,7 +23,7 @@ const About = () => {
         <h2 className="text-3xl font-bold dark:text-slate-100 text-gray-800 mb-6">
           Full Stack Developer
         </h2>
-        <p className="text-gray-600 dark:text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
+        <p className="text-gray-600 dark:text-slate-100 max-w-2xl mx-auto mb-8 leading-relaxed">
           Experienced in building complete web applications using modern technologies
           including React, Node.js, and various databases. Committed to writing clean,
           maintainable code and creating exceptional user experiences.
