@@ -14,7 +14,26 @@ const SignUpPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+
+    try {
+      const response = await fetch('/api/auth/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Something went wrong');
+      }
+
+      router.push('/signin');
+    } catch (error) {
+      console.error('Signup error:', error);
+    }
   };
 
   const handleSocialSignIn = (provider) => {
