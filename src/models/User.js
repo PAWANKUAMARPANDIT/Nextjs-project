@@ -1,4 +1,3 @@
-// models/User.js
 import mongoose from 'mongoose';
 
 const UserSchema = new mongoose.Schema({
@@ -15,6 +14,10 @@ const UserSchema = new mongoose.Schema({
   password: {
     type: String,
     required: [true, 'Please provide a password'],
+  },
+  buyingOption: { 
+    type: Boolean, 
+    default: false 
   },
 },
   { timestamps: true }

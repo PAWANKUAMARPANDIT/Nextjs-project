@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { signIn } from 'next-auth/react';
+import { signIn,useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
 const SignInPage = () => {
@@ -10,6 +10,8 @@ const SignInPage = () => {
     email: '',
     password: ''
   });
+
+  const {data:session} = useSession();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
