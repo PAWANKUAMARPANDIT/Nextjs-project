@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import axios from "axios";
 
 const PricingSection = () => {
   const plans = [
@@ -54,6 +55,22 @@ const PricingSection = () => {
     },
   ];
 
+  const handlePlanSelection = async (plan) => {
+    try {
+      const response = await axios.post('/api/user/storePlan', {
+        username: 'John Doe', 
+        email: 'john@example.com', 
+        selectedPlan: {
+          planName: plan.name,
+          price: plan.price,
+        },
+      });
+      console.log(response.data.message);
+    } catch (error) {
+      console.error(error.response?.data?.error || 'Error saving the plan');
+    }
+  };
+
   return (
     <section className="py-20 relative z-10 pt-28 bg-gradient-to-r from-purple-100 to-blue-100">
       <div className="container px-6">
@@ -106,9 +123,10 @@ const PricingSection = () => {
                 <div className="flex justify-center">
                   <Link
                     href={{
-                      pathname: "/payment", // Redirect to the payment page
-                      query: { price: plan.price }, // Pass the price as a query parameter
+                      pathname: "/payment",
+                      query: { price: plan.price },
                     }}
+                    onClick={() => handlePlanSelection(plan)}
                     className={`py-3 px-6 font-medium border rounded-md transition-all duration-500 ${
                       plan.isPopular
                         ? "bg-purple-500 text-white border-purple-500 hover:bg-purple-700"

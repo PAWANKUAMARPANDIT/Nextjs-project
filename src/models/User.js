@@ -15,9 +15,15 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Please provide a password'],
   },
-  buyingOption: { 
-    type: Boolean, 
-    default: false 
+  selectedPlane: { 
+    planeName:{
+      type:string,
+      required:true,
+    },
+    price:{
+      type:Number,
+      required:true
+    },
   },
 },
   { timestamps: true }
