@@ -17,7 +17,7 @@ const UserSchema = new mongoose.Schema({
   },
   selectedPlane: { 
     planeName:{
-      type:string,
+      type:String,
       required:true,
     },
     price:{
